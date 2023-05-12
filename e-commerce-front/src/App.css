@@ -312,9 +312,15 @@
    background-color: #fff;
  }
 
+ .home-wrapper-1 img {
+   width: 100%;
+   display: block;
+   border-radius: var(--base-border-radius);
+ }
+
  .main-banner-content {
-   top: 5rem;
-   left: 4rem;
+   top: 13%;
+   left: 7%;
  }
 
  .main-banner-content h6 {
@@ -795,16 +801,140 @@
  }
 
  .famous-content p {
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0;
-  color: var(--color-base-accent-1);
-  margin: 0;
-  font-weight: 100;
-  font-family: var(--font-heading-family);
-  text-transform: inherit;
+   font-size: 15px;
+   line-height: 24px;
+   letter-spacing: 0;
+   color: var(--color-base-accent-1);
+   margin: 0;
+   font-weight: 100;
+   font-family: var(--font-heading-family);
+   text-transform: inherit;
  }
 
  /* Famous Products End */
+
+ /* Our Store */
+ .filter-card {
+   float: left;
+   padding: 0;
+   width: 100%;
+   margin-bottom: 20px;
+   box-shadow: 0 0 10px #0000001a;
+   border-radius: var(--base-border-radius);
+   -moz-border-radius: var(--base-border-radius);
+   -webkit-border-radius: var(--base-border-radius);
+   -khtml-border-radius: var(--base-border-radius);
+   background: #fff;
+ }
+
+ .filter-card .filter-title {
+   color: var(--color-base-accent-1);
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 20px;
+   padding: 0 15px;
+   text-transform: capitalize;
+   letter-spacing: .8px;
+   font-family: var(--font-body-family);
+   border-radius: var(--base-border-radius);
+ }
+
+ .filter-card .filter-content {
+   padding: 10px 20px;
+   margin-bottom: 0;
+   float: left;
+   width: 100%;
+   /* position: relative; */
+   margin: 5px 0;
+ }
+
+ .filter-card li {
+   padding: 0;
+   float: left;
+   /* width: 100%; */
+   line-height: 30px;
+   cursor: pointer;
+   list-style: none;
+ }
+
+ .filter-content .sub-title {
+   font-size: 14px;
+   font-weight: 600;
+   color: var(--color-base-accent-1);
+   line-height: 28px;
+ }
+
+ .form-check-input:focus {
+   border-color: #86b7fe;
+   outline: 0;
+   box-shadow: none;
+ }
+
+ .price-range {
+   display: flex;
+   padding: 10px 0 0;
+ }
+
+ .price-input {
+   height: 40px;
+   background: #f7f7f7;
+   flex-grow: 1;
+   text-align: left;
+   padding: 1.5rem;
+ }
+
+ .color-range {
+   display: flex;
+   padding: 10px 0 0;
+ }
+
+ .color {
+   list-style-type: none;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .color li {
+   width: 2rem;
+   height: 2rem;
+   background-color: red;
+   border-radius: 50%;
+ }
+
+ .form-check input {
+   width: 1.3rem;
+   height: 1.3rem;
+   line-height: 60px;
+ }
+
+ .form-check-input {
+   border-radius: 0 !important;
+ }
+
+ .single-tag {
+   width: auto;
+   float: none;
+   display: inline-block;
+   vertical-align: top;
+   padding: 4px 2px;
+   line-height: 20px;
+   margin: 6px 2px;
+ }
+
+ .single-tag a {
+  color: #838383;
+  background-color: #f2f2f2;
+  padding: 9px 10px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 5px;
+ }
+
+ .small-card:first-child {
+  border-bottom: 1px solid #ededed;
+ }
+
+ /* Our Store End */
 
  /* Home Part End */

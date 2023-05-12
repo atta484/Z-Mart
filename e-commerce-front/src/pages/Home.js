@@ -13,7 +13,7 @@ const Home = () => {
           <div className='row'>
             <div className='col-md-6'>
               <div className='main-banner position-relative'>
-                <img src='images/main-banner-1.jpg' className='img-fluid rounded-3' alt='main-banner' />
+                <img src='images/main-banner-1.jpg' className='img-fluid' alt='main-banner' />
                 <div className='main-banner-content position-absolute'>
                   <h6>SUPERCHARGED FOR PROS.</h6>
                   <h2>iPad S13+ Pro.</h2>
@@ -26,7 +26,7 @@ const Home = () => {
             <div className='col-md-6'>
               <div className='d-flex flex-wrap gap-3 justify-content-between align-items-center'>
                 <div className='small-banner position-relative'>
-                  <img src='images/catbanner-01.jpg' className='img-fluid rounded-3' alt='main-banner' />
+                  <img src='images/catbanner-01.jpg' className='img-fluid' alt='main-banner' />
                   <div className='small-banner-content position-absolute'>
                     <h6>Best Sale</h6>
                     <h2>Laptops Max</h2>
@@ -34,7 +34,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className='small-banner position-relative'>
-                  <img src='images/catbanner-02.jpg' className='img-fluid rounded-3' alt='main-banner' />
+                  <img src='images/catbanner-02.jpg' className='img-fluid' alt='main-banner' />
                   <div className='small-banner-content position-absolute'>
                     <h6>New Arrival</h6>
                     <h2>Buy IPad Air</h2>
@@ -42,7 +42,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className='small-banner position-relative'>
-                  <img src='images/catbanner-03.jpg' className='img-fluid rounded-3' alt='main-banner' />
+                  <img src='images/catbanner-03.jpg' className='img-fluid' alt='main-banner' />
                   <div className='small-banner-content position-absolute'>
                     <h6>15% Off</h6>
                     <h2>SmartWatch 7</h2>
@@ -50,7 +50,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className='small-banner position-relative'>
-                  <img src='images/catbanner-04.jpg' className='img-fluid rounded-3' alt='main-banner' />
+                  <img src='images/catbanner-04.jpg' className='img-fluid' alt='main-banner' />
                   <div className='small-banner-content position-absolute'>
                     <h6>Free Engraving</h6>
                     <h2>AirPods Max</h2>
