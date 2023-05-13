@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const BlogCard = () => {
     return (
         <>
-            <div className='col-lg-4'>
+            {/* <div className='col-lg-4'> */}
                 <div className='blog-card'>
                     <div className='blog-card-image'>
                         <img src='images/blog-1.jpg' className='image-fluid image' alt='blog' />
@@ -21,7 +21,7 @@ const BlogCard = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </>
     )
 }

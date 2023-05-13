@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BreadCrum from '../components/BreadCrum'
 import ReactStars from 'react-rating-stars-component';
 import { Link } from 'react-router-dom'
+import FeatureCard from '../components/FeatureCard';
 
 const OurStore = () => {
+    const [grid, setGrid] = useState(4);
     return (
         <>
             <BreadCrum title="Our Store" />
@@ -238,7 +240,83 @@ const OurStore = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-9'></div>
+                        <div className='col-9'>
+                            <div className='filter-card filter-sort-grid p-2 mb-3'>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <div className='d-flex align-items-center gap-2'>
+                                        <p className='mb-0 d-block' style={{ width: '100px' }}>Sort By:</p>
+                                        <select name='' className='form-control form-select' id=''>
+                                            <option value="manual">Featured</option>
+                                            <option value="best-selling" selected="selected">Best Selling</option>
+                                            <option value="title-ascending">Alphabatically, A-Z</option>
+                                            <option value="title-descending">Alphabatically, Z-A</option>
+                                            <option value="price-ascending">Price, low to high</option>
+                                            <option value="price-descending">Price, high to low</option>
+                                            <option value="created-ascending">Date, old to new</option>
+                                            <option value="created-descending">Date, new to old</option>
+                                        </select>
+                                    </div>
+                                    <div className='d-flex align-items-center gap-2'>
+                                        <p className='total-products mb-0 me-2'>21 Products</p>
+                                        <div className='grid d-flex align-items-center gap-2'>
+                                            <img src='images/gr4.svg' className='d-block img-fluid' onClick={() => { setGrid(3) }} alt='grid' />
+                                            <img src='images/gr3.svg' className='d-block img-fluid' onClick={() => { setGrid(4) }} alt='grid' />
+                                            <img src='images/gr2.svg' className='d-block img-fluid' onClick={() => { setGrid(6) }} alt='grid' />
+                                            <img src='images/gr.svg' className='d-block img-fluid' onClick={() => { setGrid(12) }} alt='grid' />
+                                        </div>
+                                    </div>
+                                    {/* <div className="collection-btn d-flex align-items-center gap-2">
+                                        <div className="btn-group">
+                                            <Link href="#" id="col_4" className="btn btn-default btn-sm active">
+                                                <img src='images/gr4.svg' className='icon d-block img-fluid' alt='grid' />
+                                            </Link>
+                                            <Link href="#" id="col_3" className="btn btn-default btn-sm">
+                                                <img src='images/gr3.svg' className='icon d-block img-fluid' alt='grid' />
+                                            </Link>
+                                            <Link href="#" id="col_2" className="btn btn-default btn-sm">
+                                                <img src='images/gr2.svg' className='icon d-block img-fluid' alt='grid' />
+                                            </Link>
+                                            <Link href="#" id="col_1" className="btn btn-default btn-sm">
+                                                <img src='images/gr.svg' className='icon d-block img-fluid' alt='grid' />
+                                            </Link>
+                                        </div>
+                                        <div className="product-count light" role="status">
+                                            <div className="product-count__text">
+                                                <span id="ProductCount" className="">
+                                                    21 products
+                                                </span>
+                                            </div>
+                                            <div className="loading-overlay__spinner">
+                                                <svg
+                                                    aria-hidden="true"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    className="spinner"
+                                                    viewBox="0 0 66 66"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <circle
+                                                        className="path"
+                                                        fill="none"
+                                                        strokeWidth={6}
+                                                        cx={33}
+                                                        cy={33}
+                                                        r={30}
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div> */}
+
+                                </div>
+                            </div>
+                            <div className='row'>
+                                <FeatureCard grid={grid} />
+                                <FeatureCard grid={grid} />
+                                <FeatureCard grid={grid} />
+                                <FeatureCard grid={grid} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

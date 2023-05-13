@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactStars from 'react-rating-stars-component';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const FeatureCard = () => {
+const FeatureCard = (props) => {
+    const {grid} = props;
+    let location = useLocation();
     return (
-        <div className='col-lg-2'>
+        <>
+            <div className= {` ${location.pathname == "/store" ? `col-${grid}` : "col-3"} `}>
             <Link className='feature-card position-relative'>
                 <div className='wishlist-icon position-absolute'>
                     <Link>
@@ -25,7 +28,8 @@ const FeatureCard = () => {
                         value="3"
                         edit={false}
                         activeColor="#ffd700"
-                    />,
+                    />
+                    <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt...</p>
                     <p className='price'>$100.00</p>
                 </div>
 
@@ -44,6 +48,7 @@ const FeatureCard = () => {
                 </div>
             </Link>
         </div>
+        </>
     )
 }
 

@@ -335,9 +335,17 @@ const Home = () => {
             <div className='col-12 title-wrapper'>
               <h3 className='section-heading'>Our Latest Blogs</h3>
             </div>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            <div className='row'>
+              <div className='col-lg-4'>
+                <BlogCard />
+              </div>
+              <div className='col-lg-4'>
+                <BlogCard />
+              </div>
+              <div className='col-lg-4'>
+                <BlogCard />
+              </div>
+            </div>
           </div>
         </div>
       </section>
